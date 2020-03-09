@@ -233,6 +233,7 @@ footer {
 
 .logo-small {
     margin-top: 1em;
+    margin-left: 3em;
     height: 80%;
     width: auto;
 }
@@ -286,13 +287,23 @@ footer {
     display: none;
 }
 
+.image-center {
+    text-align: center;
+}
+
+.link-no-border:hover {
+    height: 87%;
+    
+}
+
 @media screen and (min-width: 552px) {
     .logo-main {
         z-index: 2;
         position: absolute;
         top: 22%;
-        width: 60%;
-        left: 20%;
+        height: 25%;
+        width: auto;
+        left: 39%;
     }
 
     .cloud1 {
@@ -301,7 +312,7 @@ footer {
         opacity: 0.9;
         height: auto;
         width: 35%;
-        top: 24%;
+        top: 30%;
         left: 40%;
     }
 
@@ -311,7 +322,7 @@ footer {
         opacity: 0.9;
         height: auto;
         width: 30%;
-        top: 21%;
+        top: 25%;
         left: 30%;
     }
 } 
