@@ -97,10 +97,17 @@ h2 {
     margin-bottom: 1.5em;
 }
 
+h3 {
+    text-transform: uppercase;
+    font-size: 1em;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+
 #header-image {
-    background-image: url("../img/screen_army.png");
-    height: 60%;
-    background-attachment: scroll;
+    background-image: url("../img/evening_star.png");
+    height: 100%;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -108,6 +115,15 @@ h2 {
 
 #story-image {
     background-image: url("../img/screen_shore.png");
+    height: 15%;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#art-image {
+    background-image: url("../img/evening_star.png");
     height: 15%;
     background-attachment: scroll;
     background-position: center;
@@ -189,9 +205,9 @@ footer {
 .logo-main {
     z-index: 2;
     position: absolute;
-    top: 22%;
-    width: 90%;
-    left: 5%;
+    top: 23%;
+    width: 85%;
+    left: 7.5%;
 }
 
 .cloud1 {
@@ -292,18 +308,33 @@ footer {
 }
 
 .link-no-border:hover {
-    height: 87%;
-    
+    filter: saturate(30%);  
+}
+
+.cities {
+    padding-bottom: 1em;
+    overflow: auto;
+}
+
+.cities div {
+    margin-bottom: 1em;
+}
+
+.cities img {
+    float: left;
+    width: 30%;
+    margin-right: 2em;
+    margin-bottom: 1em;
 }
 
 @media screen and (min-width: 552px) {
     .logo-main {
         z-index: 2;
         position: absolute;
-        top: 22%;
-        height: 25%;
-        width: auto;
-        left: 39%;
+        top: 20%;
+        height: auto;
+        width: 50%;
+        left: 25%;
     }
 
     .cloud1 {
@@ -326,6 +357,13 @@ footer {
         left: 30%;
     }
 } 
+
+@media screen and (min-width: 1415px) {
+    .logo-main {
+        height: 80%;
+        width: auto;
+    }
+}
 
 /* Quick fix to disable coud animation for mobile*/
 @media screen and (max-width: 552px) {
